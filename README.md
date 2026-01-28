@@ -1,13 +1,19 @@
 # fixedpoint-fast-inverse-square-root-lib
 ### 概要
 高速逆平方根を固定小数点で実装するVLSIアルゴリズム
+VLSI Algorithm for Implementing Fast Inverse Square Root in Fixed-Point Format
 
 ### 詳細
-VLSIで逆平方根を計算する際，回路規模の削減や演算速度向上のためのアルゴリズムとして有名なものに高速逆平方根があります．<br>
+逆平方根を計算する際，演算速度向上のためのアルゴリズムとして有名なものに高速逆平方根があります．高速逆平方根は少量の乗算と加算，ビットシフトのみで計算が可能なため，VLSIにおいても有用なアルゴリズムです．<br>
 高速逆平方根は浮動小数点専用のアルゴリズムで，固定小数点での実装をしている事例は（調べた限りでは）ありませんでした．<br>
 **固定小数点→カスタム浮動小数点→高速逆平方根(カスタム浮動小数点上)→固定小数点**<br>
 という手順を踏むことで固定小数点で高速に逆平方根を計算するアルゴリズムを考えてみました．<br>
 CORDIC法やテーブル参照でのニュートン法よりは早いと思うけど，最良なのかはわかんないです．<br>
+When calculating inverse square roots, the fast inverse square root algorithm is well-known for improving computational speed. Since it requires only a small number of multiplications, additions, and bit shifts, it is a useful algorithm even in VLSI.
+The fast inverse square root is a floating-point-specific algorithm; I found no examples (to my knowledge) of its implementation in fixed-point.
+**Fixed-point → Custom floating-point → Fast inverse square root (on custom floating-point) → Fixed-point**<br>
+Following this sequence, I devised an algorithm to compute inverse square roots efficiently on fixed-point systems.<br>
+I believe it's faster than the CORDIC method or Newton's method using table lookups, but I'm not sure if it's the optimal solution.<br>
 
 ### テスト例
 ニュートン法を2回適用したときの精度
