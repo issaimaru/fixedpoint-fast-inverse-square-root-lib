@@ -10,6 +10,7 @@ VLSIで逆平方根を計算する際，回路規模の削減や演算速度向�
 CORDIC法やテーブル参照でのニュートン法よりは早いと思うけど，最良なのかはわかんないです．<br>
 
 ### テスト例
+ニュートン法を2回適用したときの精度
 ```c
 Fast Inverse Square Root Test
 input           fast_inv_sqrt   Math            Diff
