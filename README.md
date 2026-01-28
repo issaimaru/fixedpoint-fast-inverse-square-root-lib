@@ -1,6 +1,6 @@
 # fixedpoint-fast-inverse-square-root-lib
 ### 概要
-高速逆平方根を固定小数点で実装するVLSIアルゴリズム
+高速逆平方根を固定小数点で実装するVLSIアルゴリズム<br>
 VLSI Algorithm for Implementing Fast Inverse Square Root in Fixed-Point Format
 
 ### 詳細
