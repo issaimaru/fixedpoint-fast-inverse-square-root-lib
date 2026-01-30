@@ -15,6 +15,8 @@ The fast inverse square root is a floating-point-specific algorithm; I found no 
 Following this sequence, I devised an algorithm to compute inverse square roots efficiently on fixed-point systems.<br>
 I believe it's faster than the CORDIC method or Newton's method using table lookups, but I'm not sure if it's the optimal solution.<br>
 
+<img width="1061" height="1321" alt="Screenshot_2026-01-30-15-39-28-937_md obsidian" src="https://github.com/user-attachments/assets/1d0791fd-9a3b-4ef3-9561-04f342c9b5de" />
+
 ### テスト例
 ニュートン法を2回適用したときの精度
 ```c
